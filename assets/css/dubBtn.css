@@ -14,9 +14,9 @@ body {
 	height:100px;
 	background:#666;
 	border-radius:3em;
-	border:0.1em dashed #666;
+	border:0.1em solid #666;
 	
-	background: #555 url('../images/share-icon.svg') no-repeat scroll top left;
+	background: #eee url('../images/share-icon.svg') no-repeat scroll top left;
 }
 p {
 	float:left;
@@ -149,8 +149,8 @@ p {
 
 /*icons*/
 .dubBtn ul li.share a div {
-	top:0.98em;
-	left:0.35em;
+	top:0.68em;
+	left:0.1em;
 	font-size:0.96em;
 	padding:0.4em 0.3em 0.4em 0.4em;
 	border-radius:0.2em;

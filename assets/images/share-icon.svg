@@ -7,7 +7,7 @@
 <g id="Layer_1" display="none">
 	<g id="yZWhCp.tif">
 		
-			<image display="inline" overflow="visible" width="310" height="277" id="Layer_0_1_" xlink:href="783BD01C.png"  transform="matrix(1 0 0 1 -32.8975 -18.8755)">
+			<image display="inline" overflow="visible" width="310" height="277" id="Layer_0_1_" xlink:href="783BD01E.png"  transform="matrix(1 0 0 1 -32.8975 -18.8755)">
 		</image>
 	</g>
 	<path fill="#4FC2EE" d="M202.861,213.789c0,4.536-2.902,8.209-6.485,8.209H6.486c-3.583,0-6.486-3.673-6.486-8.209V46.877
@@ -27,7 +27,7 @@
 <g id="Layer_1_copy">
 	<g id="yZWhCp.tif_1_" display="none">
 		
-			<image display="inline" overflow="visible" width="310" height="277" id="Layer_0_2_" xlink:href="783BD01D.png"  transform="matrix(1 0 0 1 -32.8975 -18.8755)">
+			<image display="inline" overflow="visible" width="310" height="277" id="Layer_0_2_" xlink:href="783BD01F.png"  transform="matrix(1 0 0 1 -32.8975 -18.8755)">
 		</image>
 	</g>
 	<path display="none" fill="#4FC2EE" d="M202.861,213.789c0,4.536-2.902,8.209-6.485,8.209H6.486c-3.583,0-6.486-3.673-6.486-8.209
@@ -43,8 +43,8 @@
 	<path fill="#FFFFFF" d="M100.228,128c0-23.231,17.478-42.369,40-45.011v-44.32c-48.169,3.974-86,43.493-86,91.665
 		c0,48.172,37.831,87.689,86,91.664v-48.989C117.706,170.367,100.228,151.229,100.228,128z"/>
 	<polygon fill="#FFFFFF" points="140.228,0 140.228,127 236.228,53.5 	"/>
-	<g>
-		<g>
+	<g display="none">
+		<g display="inline">
 			<path fill="#FFFFFF" d="M190.861,38.668H12c-6.627,0-12,5.373-12,12v159.329c0,6.627,5.373,12,12,12h178.861
 				c6.628,0,12-5.373,12-12V50.668C202.861,44.041,197.489,38.668,190.861,38.668z M175.476,185.393
 				c0,6.436-5.217,11.653-11.652,11.653H39.038c-6.436,0-11.653-5.218-11.653-11.653V81.486c0-6.436,5.217-11.653,11.653-11.653
