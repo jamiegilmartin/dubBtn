@@ -48,33 +48,43 @@ p {
 	border:0.4em solid #666;
 	border-radius:3.5em;
 	font-weight:bold;
-	background: -webkit-linear-gradient(top,  #fff
-0%,#ddd 100%);
+	color:#fff;
+	background: #00aeef;/*aka background:rgba(0,174,239,1);*/
 	box-shadow: 0 0.3em  0.3em  #ccc;
 }
 
-.dubBtn a.btn span {
+.dubBtn a.btn div.dub {
 	position:relative;
 	top:0.445em;
-	left:0.07em;
+	/*left:0.07em;*/
+	left:-0.04em;
 	font-weight:bold;
 	font-size:3em;
 	letter-spacing:0.1em;
+	-webkit-transition: -webkit-transform 0.2s ease-in;
+	-webkit-transform: scaleX(-1);
+}
+.dubBtnOn a.btn div.dub {
+	font-size:2.3em;
+	top:0.7em;
+	left:0.05em;
+	-webkit-transform: scaleX(1);
 }
 .dubBtn a.btn:hover {
 	color:#fff;
-	background:rgba(0,174,239,1);
+	background: -webkit-linear-gradient(top,  #555
+0%,#666 100%);
 }
 .dubBtnOn a.btn {
 	color:#fff;
-	background: -webkit-linear-gradient(top,  #555
-0%,#666 100%);
-	box-shadow: none;
+	background: -webkit-linear-gradient(top,  #999
+	0%,#888 100%);
+	box-shadow: 0 0 0 #444, inset 0 0 3em #666;
 }
 .dubBtnOn a.btn:hover {
-	color:#888;
-	background: -webkit-linear-gradient(top,  #444
-0%,#555 100%);
+	background: -webkit-linear-gradient(top,  #878787
+0%,#767676 100%);
+	box-shadow: 0 0 0 #444, inset 0 0 3em #656565;
 }
 
 
@@ -94,12 +104,13 @@ p {
 
 .dubBtn ul li {
 	position:absolute;
-	border:0.4em solid #666;
+	border:0.3em solid #666;
 	width:4em;
 	height:4em;
 	background:#ccc;
 	box-shadow: 0 0.3em  0.3em  #ccc;
 	transform-origin: 100% 100%;
+	border-radius:6em;
 /*	-webkit-transition: -webkit-transform 0.5s ease-in;*/
 }
 .dubBtn ul li a {
@@ -107,16 +118,20 @@ p {
 	width:100%;
 	height:100%;
 	color:#fff;
+	border-radius:6em;
 }
-.dubBtn ul li a span {
+.dubBtn ul li a div {
 	position:relative;
 	font-weight:bold;
 	letter-spacing:0.1em;
+	display:inline-block;
 }
 .dubBtn ul li a:hover {
 	color:#666;
 	background:rgba(255,255,255,0.3);
 }
+
+/*themes*/
 .dubBtn ul li.share {
 	background:#00aeef;
 }
@@ -129,61 +144,92 @@ p {
 .dubBtn ul li.wishlist {
 	background:#8dc63f;
 }
+
+/*icons*/
+.dubBtn ul li.share a div {
+	top:0.98em;
+	left:0.35em;
+	font-size:0.92em;
+	border:0.3em solid #fff;
+	padding:0.4em 0.3em 0.4em 0.4em;
+	border-radius:0.2em;
+}
+.dubBtn ul li.share a div:after{
+	content:'';
+}
+.dubBtn ul li.like a div {
+	top:.15em;
+	left:.1em;
+	font-size:4em;
+	
+}
+.dubBtn ul li.buy a div {
+	top:1em;
+	left:-0.2em;
+	background:#fff;
+	color:#838dee;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding:0.4em 0.3em 0.4em 0.4em;
+	border-radius:0.2em;
+	text-shadow: 0 0.1em  0.1em  #eee;
+	box-shadow: 0 0.1em  0.1em  #eee;
+}
+.dubBtn ul li.wishlist a div {
+	top:0.5em;
+	text-shadow: 0 0.1em  0.1em  #eee;
+}
+.dubBtn ul li.wishlist a div span{
+	font-size:2em;
+}
+
+
 .dubBtn ul li:first-child {
 	top:0.8em;
 	right:-4.5em;
 	width:5em;
-	border-top-right-radius:2em;
-	border-bottom-right-radius:2em;
+	border-top-right-radius:5em;
+	border-bottom-right-radius:5em;
 }
 .dubBtn ul li:first-child a {
-	border-top-right-radius:2em;
-	border-bottom-right-radius:2em;
+	border-top-right-radius:5em;
+	border-bottom-right-radius:5em;
 }
-.dubBtn ul li:first-child span {
-	top:1.2em;
-}
+
 .dubBtn ul li:nth-child(2)  {
 	left:0.8em;
-	bottom:-4.5em;
+	bottom:-4.3em;
 	width:4.2em;
 	height:5em;
-	border-bottom-right-radius:2em;
-	border-bottom-left-radius:2em;
+	border-bottom-right-radius:5em;
+	border-bottom-left-radius:5em;
 }
 .dubBtn ul li:nth-child(2) a {
-	border-bottom-right-radius:2em;
-	border-bottom-left-radius:2em;
+	border-bottom-right-radius:5em;
+	border-bottom-left-radius:5em;
 }
-.dubBtn ul li:nth-child(2) span {
-	top:1.8em;
-}
+
 .dubBtn ul li:nth-child(3)  {
 	top:0.8em;
 	left:-4.5em;
 	width:5em;
-	border-top-left-radius:2em;
-	border-bottom-left-radius:2em;
+	border-top-left-radius:5em;
+	border-bottom-left-radius:5em;
 }
 .dubBtn ul li:nth-child(3) a {
-	border-top-left-radius:2em;
-	border-bottom-left-radius:2em;
+	border-top-left-radius:5em;
+	border-bottom-left-radius:5em;
 }
-.dubBtn ul li:nth-child(3) span {
-	top:1.2em;
-}
+
 .dubBtn ul li:last-child {
 	left:0.8em;
-	top:-4.5em;
+	top:-4.3em;
 	width:4.2em;
 	height:5em;
-	border-top-right-radius:2em;
-	border-top-left-radius:2em;
+	border-top-right-radius:5em;
+	border-top-left-radius:5em;
 }
 .dubBtn ul li:last-child a{
-	border-top-right-radius:2em;
-	border-top-left-radius:2em;
-}
-.dubBtn ul li:last-child span {
-	top:.8em;
+	border-top-right-radius:5em;
+	border-top-left-radius:5em;
 }
