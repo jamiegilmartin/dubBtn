@@ -24,12 +24,11 @@ p {
 	
 }
 .dubBtn {
-	-webkit-perspective: 1000px;
 	display:inline-block;
 	float:right;
 	position:relative;
-	margin:1em 1em 0 0;
-	font-size:1.5em;
+	margin:2em 2em 0 0;
+	font-size:1em;
 }
 .dubBtn a {
 	display:block;
@@ -41,13 +40,13 @@ p {
 	color:#838dee;
 }
 .dubBtn a.btn {
-	height:3em;
-	width:3em;
+	height:6em;
+	width:6em;
 	position:relative;
 	z-index:2;
 	/*#00aeef*/
 	border:0.4em solid #666;
-	border-radius:1.8em;
+	border-radius:3.5em;
 	font-weight:bold;
 	background: -webkit-linear-gradient(top,  #fff
 0%,#ddd 100%);
@@ -56,10 +55,10 @@ p {
 
 .dubBtn a.btn span {
 	position:relative;
-	top:0.3em;
-	left:0.1em;
+	top:0.445em;
+	left:0.07em;
 	font-weight:bold;
-	font-size:1.7em;
+	font-size:3em;
 	letter-spacing:0.1em;
 }
 .dubBtn a.btn:hover {
@@ -70,6 +69,7 @@ p {
 	color:#fff;
 	background: -webkit-linear-gradient(top,  #555
 0%,#666 100%);
+	box-shadow: none;
 }
 .dubBtnOn a.btn:hover {
 	color:#888;
@@ -80,199 +80,110 @@ p {
 
 .dubBtn ul {
 	position:absolute;
-	width:2em;
-	top:-4.6em;
+	top:0;
 	left:0;
 	z-index:1;
-	/*outline: dotted 1px red;*/
-	
-	-webkit-transform:scale(0.1) rotate(-45deg);
-	-webkit-animation-name: ul_fade_out;
-	-webkit-animation-duration: 0.2s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function:  ease-out;  
-	-webkit-animation-fill-mode: forwards;
+	width:100%;
+	height:100%;
+	-webkit-transform: scale(0.1) rotate(-180deg);
+	-webkit-transition: -webkit-transform 0.2s ease-in;
 }
-
-@-webkit-keyframes ul_fade_in {
-	0% {
-		left:0;
-		-webkit-transform:scale(0.1) rotate(-45deg);
-	}
-	100% {
-		left:4.5em;
-		-webkit-transform:scale(1) rotate(0);
-	}
+.dubBtnOn ul {
+	-webkit-transform: scale(1) rotate(0deg);
 }
-@-webkit-keyframes ul_fade_out {
-	0% {
-		left:4.5em;
-		-webkit-transform:scale(1) rotate(0);
-	}
-	100% {
-		left:0;
-		-webkit-transform:scale(0.1) rotate(-45deg);
-	}
-}
-.dubBtnOn ul.showList {
-	-webkit-animation-name: ul_fade_in;
-	
-}
-
 
 .dubBtn ul li {
+	position:absolute;
 	border:0.4em solid #666;
-	width:3em;
-	height:3em;
-	margin-bottom:1em;
-	background: -webkit-radial-gradient(circle, #c7e2eb , #96beca);
-	border-top-right-radius:1em;
-	border-bottom-right-radius:1em;
+	width:4em;
+	height:4em;
+	background:#ccc;
 	box-shadow: 0 0.3em  0.3em  #ccc;
-	
 	transform-origin: 100% 100%;
-	-webkit-transition: -webkit-transform 0.5s ease-in;
+/*	-webkit-transition: -webkit-transform 0.5s ease-in;*/
 }
 .dubBtn ul li a {
 	display:block;
 	width:100%;
 	height:100%;
 	color:#fff;
-	webkit-transform: skewX(-60deg) rotate(-15deg);
 }
 .dubBtn ul li a span {
 	position:relative;
-	top:1em;
-	left:0.1em;
 	font-weight:bold;
-	font-size:0.9em;
 	letter-spacing:0.1em;
 }
 .dubBtn ul li a:hover {
 	color:#666;
 	background:rgba(255,255,255,0.3);
 }
-
-
-
-/*
--webkit-transform: translateX(300px) translateY(48px) translateZ(590px) translateY(0) rotateX(-7.5deg) rotateY(0deg);
-*/
-.dubBtn ul li:first-child {
+.dubBtn ul li.share {
 	background:#00aeef;
-	-webkit-transform: translateX(-1.5em) rotate(-45deg) skewX(5deg);
+}
+.dubBtn ul li.like {
+	background:#ff8b36;
+}
+.dubBtn ul li.buy {
+	background:#838dee;
+}
+.dubBtn ul li.wishlist {
+	background:#8dc63f;
+}
+.dubBtn ul li:first-child {
+	top:0.8em;
+	right:-4.5em;
+	width:5em;
+	border-top-right-radius:2em;
+	border-bottom-right-radius:2em;
+}
+.dubBtn ul li:first-child a {
+	border-top-right-radius:2em;
+	border-bottom-right-radius:2em;
+}
+.dubBtn ul li:first-child span {
+	top:1.2em;
 }
 .dubBtn ul li:nth-child(2)  {
-	background:#ff8b36;
-/*	 -webkit-transform:  translateY(-1.7em) ;*/
+	left:0.8em;
+	bottom:-4.5em;
+	width:4.2em;
+	height:5em;
+	border-bottom-right-radius:2em;
+	border-bottom-left-radius:2em;
+}
+.dubBtn ul li:nth-child(2) a {
+	border-bottom-right-radius:2em;
+	border-bottom-left-radius:2em;
+}
+.dubBtn ul li:nth-child(2) span {
+	top:1.8em;
+}
+.dubBtn ul li:nth-child(3)  {
+	top:0.8em;
+	left:-4.5em;
+	width:5em;
+	border-top-left-radius:2em;
+	border-bottom-left-radius:2em;
+}
+.dubBtn ul li:nth-child(3) a {
+	border-top-left-radius:2em;
+	border-bottom-left-radius:2em;
+}
+.dubBtn ul li:nth-child(3) span {
+	top:1.2em;
 }
 .dubBtn ul li:last-child {
-	background:#8dc63f;
-	-webkit-transform: translateX(-1.5em) rotateZ(45deg);
+	left:0.8em;
+	top:-4.5em;
+	width:4.2em;
+	height:5em;
+	border-top-right-radius:2em;
+	border-top-left-radius:2em;
 }
-.dubBtn ul li a {
-	display:block;
-	/*border-radius: 50%;*/
-	/* -webkit-transform: skewY(-60deg) rotate(-15deg);*/
+.dubBtn ul li:last-child a{
+	border-top-right-radius:2em;
+	border-top-left-radius:2em;
 }
-/* 
- * rotate each slice at the right angle = (A/2)° + (k - (n+1)/2)*A°
- * where A is the angle of 1 slice (30° in this case)
- * k is the number of the slice (in {1,2,3,4,5} here)
- * and n is the number of slices (5 in this case)
- * formula works for odd number of slices (n odd)
- * for even number of slices (n even) the rotation angle is (k - n/2)*A°
- * 
- * after rotating, skew on Y by 90°-A°; here A° = the angle for 1 slice = 30° 
- */
-/*
-.dubBtn ul li:first-child { -webkit-transform: rotate(-45deg) skewY(60deg); }
-.dubBtn ul li:nth-child(2) { -webkit-transform: rotate(-15deg) skewY(60deg); }
-.dubBtn ul li:nth-child(3) { -webkit-transform: rotate(15deg) skewY(60deg); }
-.dubBtn ul li:nth-child(4) { -webkit-transform: rotate(45deg) skewY(60deg); }
-.dubBtn ul li:last-child { -webkit-transform: rotate(75deg) skewY(60deg); }
-
-
-.dubBtn ul li a {
-	padding:0.5em;
-	border-radius: 50%;
-	box-shadow: 0 0 3px dimgrey, inset 0 0 4px white;
-	
-	transform: skewY(-60deg) rotate(-15deg);
-	
-	background:
-	linear-gradient(75deg, 
-	transparent 50%, grey 50%, transparent 54%) no-repeat 36.5% 0,
-	linear-gradient(-75deg, 
-	transparent 50%, grey 50%, transparent 54%) no-repeat 63.5% 0,
-	radial-gradient(rgba(127,127,127,0) 49%, 
-	rgba(255,255,255,.7) 51%, #c9c9c9 52%);
-	
-	background-size: 15% 15%, 15% 15%, cover;
-	line-height: 1.4;
+.dubBtn ul li:last-child span {
+	top:.8em;
 }
-*/
-/* element fades - css animations used for multiple ui elements */
-@-webkit-keyframes element_fade_in {
-	0% {
-		opacity:0;
-	}
-	100% {
-		opacity:1;
-	}
-
-}
-@-webkit-keyframes element_fade_out {
-	0% {
-		opacity:1;
-	}
-	100% {
-		opacity:0;
-	}
-
-}
-.show {
-	-webkit-animation-name: element_fade_in;
-	-webkit-animation-duration: 0.5s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function:  ease-out;  
-	-webkit-animation-fill-mode: forwards;
-}
-.hide {
-	-webkit-animation-name: element_fade_out;
-	-webkit-animation-duration: 0.3s;
-	-webkit-animation-iteration-count: 1;
-	-webkit-animation-timing-function:  ease-out;  
-	-webkit-animation-fill-mode: forwards;
-}
-.hi {
-		-webkit-perspective: 1000px;
-	-webkit-perspective-origin: 50% 50%; /*default*/
-	-webkit-user-select: none;
-	-webkit-transition: -webkit-transform 0.5s ease-in;
-	-webkit-transform: scale3d(0.6,0.6,0.6) translateX(-200px) translateY(10px) translateZ(0) translateY(0) rotateX(-7.5deg) rotateY(0deg);
-	-webkit-transform-style: preserve-3d;
-}
-/*
-.dubBtn ul:before {
-	position:absolute;
-	top:-2em;
-	width:3em;
-	height:3em;
-	border:0.2em solid #666;
-   background: -webkit-linear-gradient(top,  rgba(0,174,239,0.5)
-0%,rgba(0,174,239,1) 100%); 
-	border-radius:1.5em;
-	content:'';
-}
-.dubBtn ul:after{
-	position:absolute;
-	bottom:2em;
-	width:3em;
-	height:3em;
-	border:0.2em solid #666;
-	background: -webkit-linear-gradient(top,  rgba(0,174,239,0.5)
-0%,rgba(0,174,239,1) 100%);
-	border-radius:1.5em;
-	content:'';
-}*/
