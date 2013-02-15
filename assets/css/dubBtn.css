@@ -12,9 +12,11 @@ body {
 .container {
 	width:400px;
 	height:100px;
-	background:#fefefe;
+	background:#666;
 	border-radius:3em;
 	border:0.1em dashed #666;
+	
+	background: #555 url('../images/share-icon.svg') no-repeat scroll top left;
 }
 p {
 	float:left;
@@ -149,19 +151,23 @@ p {
 .dubBtn ul li.share a div {
 	top:0.98em;
 	left:0.35em;
-	font-size:0.92em;
-	border:0.3em solid #fff;
+	font-size:0.96em;
 	padding:0.4em 0.3em 0.4em 0.4em;
 	border-radius:0.2em;
+	width:2.34em;
+	height:2.22em;
+	text-indent:-9999px;
+	-webkit-background-size: cover;
+	background: url('../images/share-icon.svg') no-repeat scroll top left;
 }
-.dubBtn ul li.share a div:after{
-	content:'';
-}
+
 .dubBtn ul li.like a div {
 	top:.15em;
-	left:.1em;
+	left:.05em;
 	font-size:4em;
-	
+}
+.dubBtn ul li.like a:hover div {
+	color:rgba(231,49,77,1);
 }
 .dubBtn ul li.buy a div {
 	top:1em;
