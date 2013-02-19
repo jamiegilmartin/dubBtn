@@ -10,28 +10,72 @@ body {
 	padding:15em 0 0 35em;
 }
 .container {
-	width:600px;
-	height:100px;
-	background:#666;
-	border-radius:2em;
-	border:0.4em solid #666;
-	background: #eee url('../images/share-icon.svg') no-repeat scroll top left;
+	width:70em;
+	height:10em;
+	background:#ddd;
+	border-bottom:0.2em solid #666;
+/*	background: #ccc url('../images/share-icon.svg') no-repeat scroll top left;*/
 }
-p {
+.display {
 	float:left;
+	width:50em;
+	margin:2em 0 0 0;
+/*	border:1px solid #eee;*/
+}
+.display .time {
+	width:8%;
+	float:right;
+}
+.display p {
 	font-size:2em;
-	padding:2em;
-	color:#838dee;
+	
+	color:#666;
+	
+	margin:0.3em 0 0.5em 0.5em;
 	
 }
+.slider {
+	width:90%;
+	height:1em;
+	float:left;
+	position:relative;
+}
+.slider .indicator {
+	position:absolute;
+	background:#00aeef;
+	height:100%;
+	width:50%;
+	top:0;
+	left:0;
+	z-index:1;
+	border:0.3em solid rgba(255,255,255,0);
+	border-top-left-radius:1em;
+	border-bottom-left-radius:1em;
+}
+.slider .track {
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:2;
+	background:rgba(255,255,255,0.3);
+	border-radius:1em;
+	border:0.3em solid #666;
+	cursor:pointer;
+}
+
+
+
+
 a {
 	text-decoration:none;
 }
 .playBtn {
 	display:inline-block;
-	float:right;
+	float:left;
 	position:relative;
-	margin:2em 2em 0 0;
+	margin:1.6em 2em 0 2em;
 	font-size:1em;
 	z-index:1;
 }
@@ -44,20 +88,22 @@ a {
 	top:1em;
 	/*#00aeef*/
 	border:0.4em solid #666;
-	border-radius:1em;
+	border-radius:0.2em;
 	font-weight:bold;
 	color:#fff;
-	background:rgba(214,214,214,1);
+	background:#999;
 	box-shadow: 0 0.3em  0.3em  #ccc;
 }
 .playBtn a div {
+	padding:1.2em 0 0 1.2em;
+		/*
 	font-size:3em;
-	margin:0.35em 0 0 0.5em;
+	margin:0.4em 0 0 0.5em;
 	width:1em;
 	height:1.27em;
 	text-indent:-9999px;
 	-webkit-background-size: cover;
-	background:rgba(214,214,214,1) url('../images/play-icon') no-repeat scroll top left;
+	background:rgba(214,214,214,1) url('../images/play-icon') no-repeat scroll top left;*/
 }
 
 
@@ -68,7 +114,7 @@ a {
 	display:inline-block;
 	float:right;
 	position:relative;
-	margin:2em 2em 0 0;
+	margin:1.6em 2em 0 0;
 	font-size:1em;
 	z-index:2;
 }
@@ -208,6 +254,7 @@ a {
 }
 .dubBtn ul li.like a:hover div {
 	color:rgba(231,49,77,1);
+	color:#838dee;;
 }
 .dubBtn ul li.buy a div {
 	top:1em;
